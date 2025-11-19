@@ -1,0 +1,59 @@
+*{
+    background-color: var(--primary-color);
+    margin: 0;
+    background-image: linear-gradient var(--primary-color);
+    background-size: 100% 300%;
+    animation: shine duration 2s infinite;
+    align-items: center;
+}
+
+:root {
+    --primary-color: #212338;
+    --secondary-color: #19225e;
+    --accent-color: #613b2d;
+    --dark-color: #081f49;
+    --light-color: #f8f9fa;
+    --text-color: #333;
+    --text-light: #666;
+    --border-color: #e0e0e0;
+    --success-color: #49854b;
+    --warning-color: #aa7f3e;
+    --error-color: #4d0f0b;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.15);
+    --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+.bg{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* position: fixed; */
+}
+
+.bg > img{
+    /* padding-left: 25vw;  */
+    padding-top: 30px;
+}
+
+.txt{
+    color: var(--warning-color);
+    font-size: 20px;
+    text-align: center;
+}
+
+.txt > p{
+    padding-bottom: 20px;
+    font-size: 40px;
+
+}
+
+.txt > h1 > button{
+    font-size: 30px;
+    cursor: pointer;
+    background-color: var(--error-color);
+    color: var(--warning-color);
+}
